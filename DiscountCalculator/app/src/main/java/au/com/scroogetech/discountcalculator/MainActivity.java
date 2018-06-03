@@ -47,10 +47,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }else{
                     if (s.toString().length() !=0){
-                        calcButton.setEnabled(true);
                         costEntered = true;
                     }else{
-                        calcButton.setEnabled(false);
                         costEntered = false;
                     }
                 }
@@ -81,10 +79,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }else{
                     if (s.toString().length() !=0){
-                        calcButton.setEnabled(true);
                         discountEntered = true;
                     }else{
-                        calcButton.setEnabled(false);
                         discountEntered = false;
                     }
                 }
@@ -102,10 +98,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //get other values
-
-
-                double cost = Double.parseDouble(costText.toString());
-                double discountVal = Double.parseDouble(discountText.toString());
+                double cost = Double.parseDouble(costText.getText().toString());
+                double discountVal = Double.parseDouble(discountText.getText().toString());
 
 
                 double total = calcDiscount(cost,discountVal);
