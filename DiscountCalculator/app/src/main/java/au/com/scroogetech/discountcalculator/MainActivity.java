@@ -1,10 +1,14 @@
 package au.com.scroogetech.discountcalculator;
 
+import android.content.Context;
+import android.renderscript.ScriptGroup;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -106,6 +110,11 @@ public class MainActivity extends AppCompatActivity {
         calcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //hide keyboard
+                InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(v.getWindowToken(),0);
+
                 //get other values
                 double cost = Double.parseDouble(costText.getText().toString());
                 double discountVal = Double.parseDouble(discountText.getText().toString());
