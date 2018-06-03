@@ -71,22 +71,29 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (costEntered){
-                    if (s.toString().length() !=0){
-                        calcButton.setEnabled(true);
-                        discountEntered = true;
-                    }else{
+                if (s.toString().length() > 0){
+                    double dc = Double.parseDouble(s.toString());
+                    if (dc>=100 || dc <= 0){
                         calcButton.setEnabled(false);
-                        discountEntered = false;
+                    }else if (costEntered){
+                        if (s.toString().length() !=0){
+                            calcButton.setEnabled(true);
+                            discountEntered = true;
+                        }else{
+                            calcButton.setEnabled(false);
+                            discountEntered = false;
+                        }
+                    }else{
+                        if (s.toString().length() !=0){
+                            discountEntered = true;
+                        }else{
+                            discountEntered = false;
+                        }
                     }
                 }else{
-                    if (s.toString().length() !=0){
-                        discountEntered = true;
-                    }else{
-                        discountEntered = false;
-                    }
+                    discountEntered = false;
+                    calcButton.setEnabled(false);
                 }
-
             }
 
             @Override
