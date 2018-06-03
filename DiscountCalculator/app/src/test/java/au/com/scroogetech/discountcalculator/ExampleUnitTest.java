@@ -1,4 +1,4 @@
-package discountcalculator.scroogetech.com.au.discountcalculator;
+package au.com.scroogetech.discountcalculator;
 
 import org.junit.Test;
 

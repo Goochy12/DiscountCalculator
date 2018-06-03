@@ -1,4 +1,4 @@
-package discountcalculator.scroogetech.com.au.discountcalculator;
+package au.com.scroogetech.discountcalculator;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("discountcalculator.scroogetech.com.au.discountcalculator", appContext.getPackageName());
+        assertEquals("au.com.scroogetech.discountcalculator", appContext.getPackageName());
     }
 }

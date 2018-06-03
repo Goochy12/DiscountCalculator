@@ -1,4 +1,4 @@
-package discountcalculator.scroogetech.com.au.discountcalculator;
+package au.com.scroogetech.discountcalculator;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
