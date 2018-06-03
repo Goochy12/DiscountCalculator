@@ -26,4 +26,137 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent=".05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="128dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gH3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".55" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gH4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".7" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gHE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".85" />
+
+    <EditText
+        android:id="@+id/costText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/gH1"
+        app:layout_constraintEnd_toStartOf="@+id/gVE"
+        app:layout_constraintTop_toTopOf="@+id/gHS" />
+
+    <EditText
+        android:id="@+id/discountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/gH2"
+        app:layout_constraintEnd_toStartOf="@+id/gVE"
+        app:layout_constraintTop_toTopOf="@+id/gH1" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/calculateButton"
+        app:layout_constraintBottom_toTopOf="@+id/gH3"
+        app:layout_constraintEnd_toStartOf="@+id/gVE"
+        app:layout_constraintStart_toStartOf="@+id/gVS"
+        app:layout_constraintTop_toTopOf="@+id/gH2" />
+
+    <TextView
+        android:id="@+id/totalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/gHE"
+        app:layout_constraintEnd_toStartOf="@+id/gVE"
+        app:layout_constraintStart_toStartOf="@+id/gVS"
+        app:layout_constraintTop_toTopOf="@+id/gH4" />
+
+    <TextView
+        android:id="@+id/costView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/costView"
+        app:layout_constraintBottom_toTopOf="@+id/gH1"
+        app:layout_constraintEnd_toStartOf="@+id/costText"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/gVS"
+        app:layout_constraintTop_toTopOf="@+id/gHS" />
+
+    <TextView
+        android:id="@+id/discountView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/discountView"
+        app:layout_constraintBottom_toTopOf="@+id/gH2"
+        app:layout_constraintEnd_toStartOf="@+id/discountText"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/gVS"
+        app:layout_constraintTop_toTopOf="@+id/gH1" />
+
+    <TextView
+        android:id="@+id/totalView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/total_price_View"
+        app:layout_constraintBottom_toTopOf="@+id/gH4"
+        app:layout_constraintEnd_toStartOf="@+id/gVE"
+        app:layout_constraintStart_toStartOf="@+id/gVS"
+        app:layout_constraintTop_toTopOf="@+id/gH3" />
+
 </android.support.constraint.ConstraintLayout>
