@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 public class MainActivity extends AppCompatActivity {
     //calculation variables
     //text edited vars
@@ -106,7 +108,9 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView totalView = (TextView) findViewById(R.id.totalTextView);
                 String totalDouble = Double.toString(total);
-                totalView.setText("$ " + totalDouble);
+
+                DecimalFormat format = new DecimalFormat("##.00");
+                totalView.setText("$ " + format.format(total));
 
 
             }
