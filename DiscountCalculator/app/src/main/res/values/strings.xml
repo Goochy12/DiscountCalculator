@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">DiscountCalculator</string>
     <string name="calculateButton">Calculate</string>
-    <string name="costView">Cost $:</string>
-    <string name="discountView">Discount %:</string>
+    <string name="costView">Cost $</string>
+    <string name="discountView">Discount %</string>
     <string name="total_price_View">Total Price:</string>
     <string name="totalView">$ -</string>
 </resources>
