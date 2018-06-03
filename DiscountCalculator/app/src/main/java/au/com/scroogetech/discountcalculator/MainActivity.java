@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
     public double calcDiscount(double cost, double discount){
         double total=0;
 
-        total = cost - (cost * discount);
+        total = cost - (cost * (discount /100));
 
         return total;
     }
