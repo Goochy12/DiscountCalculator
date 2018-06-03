@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView totalView = (TextView) findViewById(R.id.totalTextView);
                 String totalDouble = Double.toString(total);
-                totalView.setText(totalDouble);
+                totalView.setText("$ " + totalDouble);
 
 
             }
