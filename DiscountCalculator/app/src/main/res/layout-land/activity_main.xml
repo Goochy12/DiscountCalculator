@@ -39,14 +39,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.2" />
+        app:layout_constraintGuide_percent=".2" />
 
     <android.support.constraint.Guideline
         android:id="@+id/gH2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.36155203" />
+        app:layout_constraintGuide_percent=".4" />
 
     <android.support.constraint.Guideline
         android:id="@+id/gH3"
@@ -73,10 +73,8 @@
         android:id="@+id/costText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="number"
         android:textSize="24sp"
@@ -136,10 +134,8 @@
         android:id="@+id/costView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:text="@string/costView"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/gH1"
